@@ -1,0 +1,11 @@
+<h1>Please add a Task</h1>
+<%= form_with model: @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title%> <br>
+  <%= f.label :details %>
+  <%= f.text_field :details %> <br>
+  <%= f.label :completed %>
+  <%= f.text_field :completed %>
+  <%= f.submit %>
+<% end %>
+<p><%= link_to 'Main Page', tasks_path %></p>
